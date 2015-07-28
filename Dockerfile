@@ -4,7 +4,7 @@ FROM epsilony/baseimage
 
 MAINTAINER Man YUAN
 
-RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
+RUN curl -sL https://deb.nodesource.com/setup_0.10 | bash -
 RUN apt-get -y install nodejs
 RUN npm install  -g cnpm --registry=https://registry.npm.taobao.org && \
   cnpm install -g bower \
